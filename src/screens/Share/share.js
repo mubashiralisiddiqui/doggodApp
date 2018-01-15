@@ -85,21 +85,16 @@ export default class Profile extends React.Component {
                         width: 200, height: 200, borderRadius: 100,
                         backgroundColor: '#FDD10C',
                         justifyContent: 'center',
-                        marginTop:50
+                        marginTop: 50
                     }}>
                     <Text style={{ color: 'white', textAlign: 'center', fontSize: 35, fontWeight: 'bold' }}>450</Text>
                     <Text style={{ color: 'white', textAlign: 'center', fontSize: 20, }}>Points</Text>
                 </View>
 
                 <Button title="Share it On Facebook"
-                  icon={{name: 'share'}}
+                    icon={{ name: 'share',size:20 }}
                     textStyle={{ fontSize: 15, fontWeight: 'bold' }}
-                    buttonStyle={{
-                        backgroundColor: '#FDD10C',
-                        width: 250, height: 50, marginLeft: 'auto', marginTop: 10,
-                        marginRight: 'auto',
-                        marginTop:30
-                    }} />
+                    buttonStyle={styles.button} />
 
             </View>
         )
@@ -111,19 +106,10 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#f6f6f6',
     },
-    uglyDrawerItem: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#FDD10C',
-        padding: 10,
-        margin: 5,
-    },
-    menuheader: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#ffff',
-        padding: 10,
-        margin: 5,
-        marginLeft: 10
-    },
+    button: {
+        backgroundColor: '#FDD10C',
+        width: 250, height: 50, marginLeft: 'auto', marginTop: 10,
+        marginRight: 'auto',
+        marginTop: 30
+    }
 })

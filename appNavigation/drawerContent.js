@@ -109,6 +109,7 @@ export default class DrawerContainer extends React.Component {
                     <LoginIcon name="logout" color="#C3C4C5" size={30} style={{ marginTop: 15 }} />
                     <Text
                         // onPress={() => this.logoutm()}
+                        onPress={() => navigation.navigate('DashbordScreen')}
                         style={styles.uglyDrawerItem}
                     >
 
